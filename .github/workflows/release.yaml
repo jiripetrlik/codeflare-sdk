@@ -1,0 +1,22 @@
+name: Release
+
+on:
+    workflow_dispatch:
+        inputs:
+            tag:
+                type: string
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ncipollo/release-action@v1
+              with:
+                tag: "${{ github.event.inputs.tag }}"
+            - uses: actions/setup-python@v4
+            - uses: abatilo/actions-poetry@v2
+            - name: View poetry --help
+              run: poetry --help

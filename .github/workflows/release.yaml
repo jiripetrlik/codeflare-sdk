@@ -1,0 +1,64 @@
+name: Release
+
+on:
+    workflow_dispatch:
+        inputs:
+            new_version:
+              type: string
+            image_tag:
+              type: string
+            python_version:
+              type: string
+              default: "3.10"
+            poetry_version:
+              type: string
+              default: "1.5.1"
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - name: Checkout the repository
+              uses: actions/checkout@v3
+            - name: Change version in pyproject.toml
+              uses: ciiiii/toml-editor@1.0.0
+              with:
+                file: "pyproject.toml"
+                key: "tool.poetry.version"
+                value: "${{ github.event.inputs.new_version }}"
+            - name: Install Python
+              uses: actions/setup-python@v4
+              with:
+                python-version: ${{ github.event.inputs.python_version }}
+            - name: Install Poetry
+              uses: abatilo/actions-poetry@v2
+              with:
+                poetry-version: ${{ github.event.inputs.poetry_version }}
+            - name: Run poetry install
+              run: poetry install --with docs
+            - name: Run poetry build
+              run: poetry build
+            - name: Create new documentation
+              run: poetry run pdoc --html -o docs src/codeflare_sdk && pushd docs && rm -rf cluster job utils && mv codeflare_sdk/* . && rm -rf codeflare_sdk && popd
+            - name: Set Pypi repository
+              run: poetry config repositories.test-pypi https://test.pypi.org/legacy/
+            - name: Set Pypi token
+              run: poetry config pypi-token.test-pypi ${{ secrets.PYPI_TOKEN }}
+            - name: Publish new release to Pypi repository
+              run: poetry publish -r test-pypi
+            - name: Commit the pre-release changes
+              uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                commit_message: "New release: ${{ github.event.inputs.new_version }}"
+            - name: Create Github release
+              uses: ncipollo/release-action@v1
+              with:
+                  tag: "${{ github.event.inputs.new_version }}"
+            - name: Update Docker image version
+              run: echo ${{ github.event.inputs.new_version }} > custom-nb-image/VERSION
+            - name: Commit new version of the Docker image
+              uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                commit_message: "New image tag: ${{ github.event.inputs.image_tag }}"

@@ -40,8 +40,8 @@ jobs:
               run: poetry install --with docs
             - name: Run poetry build
               run: poetry build
-            - name: Create new documentation
-              run: poetry run pdoc --html -o docs src/codeflare_sdk && pushd docs && rm -rf cluster job utils && mv codeflare_sdk/* . && rm -rf codeflare_sdk && popd
+#            - name: Create new documentation
+#              run: poetry run pdoc --html -o docs src/codeflare_sdk && pushd docs && rm -rf cluster job utils && mv codeflare_sdk/* . && rm -rf codeflare_sdk && popd
             - name: Set Pypi repository
               run: poetry config repositories.test-pypi https://test.pypi.org/legacy/
             - name: Set Pypi token

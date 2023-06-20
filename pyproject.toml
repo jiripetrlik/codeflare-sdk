@@ -1,34 +1,32 @@
 [tool.poetry]
 name = "codeflare-sdk"
-version = "0.4.4"
+version = "0.4.3"
 description = "Python SDK for codeflare client"
-
 license = "Apache-2.0"
-
 authors = [
-    "Michael Clifford <mcliffor@redhat.com>",
-    "Mustafa Eyceoz <meyceoz@redhat.com>",
-    "Abhishek Malvankar <asmalvan@us.ibm.com>",
-    "Atin Sood <asood@us.ibm.com>",
+  "Michael Clifford <mcliffor@redhat.com>",
+  "Mustafa Eyceoz <meyceoz@redhat.com>",
+  "Abhishek Malvankar <asmalvan@us.ibm.com>",
+  "Atin Sood <asood@us.ibm.com>"
 ]
-
-readme = 'README.md'
-
+readme = "README.md"
 repository = "https://github.com/project-codeflare/codeflare-sdk"
 homepage = "https://github.com/project-codeflare/codeflare-sdk"
+keywords = [ "codeflare", "python", "sdk", "client", "batch", "scale" ]
 
-keywords = ['codeflare', 'python', 'sdk', 'client', 'batch', 'scale']
+  [tool.poetry.dependencies]
+  python = "^3.7"
+  openshift-client = "1.0.18"
+  rich = "^12.5"
+  kubernetes = "26.1.0"
+  codeflare-torchx = "0.6.0.dev0"
 
-[tool.poetry.dependencies]
-python = "^3.7"
-openshift-client = "1.0.18"
-rich = "^12.5"
-ray = {version = "2.1.0", extras = ["default"]}
-kubernetes = "26.1.0"
-codeflare-torchx = "0.6.0.dev0"
+    [tool.poetry.dependencies.ray]
+    version = "2.1.0"
+    extras = [ "default" ]
 
 [tool.poetry.group.docs]
 optional = true
 
-[tool.poetry.group.docs.dependencies]
-pdoc3 = "0.10.0"
+  [tool.poetry.group.docs.dependencies]
+  pdoc3 = "0.10.0"

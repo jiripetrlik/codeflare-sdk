@@ -65,8 +65,7 @@ The following instructions apply when doing release manually.
 * Check and update the version in "custom-nb-image/VERSION" file.
 * Update the codeflare-sdk version in "custom-nb-image/Dockerfile".
 * Commit all the changes to the repository.
-* The Github "Image" workflow should take care about the building and publishing of the new image. If not you can
-use the following instructions to build and publish image manually.
+* Use the following instructions to build and publish image manually.
 * Change directory to custom-nb-image. `cd custom-nb-image`
 * Get tag `export tag=$(cat VERSION)`
 * Build the Docker image. `docker build -t quay.io/project-codeflare/notebook:${tag} .`

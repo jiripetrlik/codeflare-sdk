@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>codeflare_sdk.cluster.cluster API documentation</title>
+<title>debug_codeflare_sdk.cluster.cluster API documentation</title>
 <meta name="description" content="The cluster sub-module contains the definition of the Cluster object, which represents
 the resources requested by the user. It also contains functions …" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
@@ -20,7 +20,7 @@ the resources requested by the user. It also contains functions …" />
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>codeflare_sdk.cluster.cluster</code></h1>
+<h1 class="title">Module <code>debug_codeflare_sdk.cluster.cluster</code></h1>
 </header>
 <section id="section-intro">
 <p>The cluster sub-module contains the definition of the Cluster object, which represents
@@ -525,7 +525,7 @@ def _copy_to_ray(cluster: Cluster) -&gt; RayCluster:
 <section>
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
-<dt id="codeflare_sdk.cluster.cluster.list_all_clusters"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.list_all_clusters"><code class="name flex">
 <span>def <span class="ident">list_all_clusters</span></span>(<span>namespace: str, print_to_console: bool = True)</span>
 </code></dt>
 <dd>
@@ -544,7 +544,7 @@ def _copy_to_ray(cluster: Cluster) -&gt; RayCluster:
     return clusters</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.list_all_queued"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.list_all_queued"><code class="name flex">
 <span>def <span class="ident">list_all_queued</span></span>(<span>namespace: str, print_to_console: bool = True)</span>
 </code></dt>
 <dd>
@@ -572,9 +572,9 @@ in a given namespace.</p></div>
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="codeflare_sdk.cluster.cluster.Cluster"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster"><code class="flex name class">
 <span>class <span class="ident">Cluster</span></span>
-<span>(</span><span>config: <a title="codeflare_sdk.cluster.config.ClusterConfiguration" href="config.html#codeflare_sdk.cluster.config.ClusterConfiguration">ClusterConfiguration</a>)</span>
+<span>(</span><span>config: <a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration" href="config.html#debug_codeflare_sdk.cluster.config.ClusterConfiguration">ClusterConfiguration</a>)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>An object for requesting, bringing up, and taking down resources.
@@ -845,14 +845,14 @@ request.</p></div>
 </details>
 <h3>Class variables</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.torchx_scheduler"><code class="name">var <span class="ident">torchx_scheduler</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.torchx_scheduler"><code class="name">var <span class="ident">torchx_scheduler</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
 </dl>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.cluster_dashboard_uri"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.cluster_dashboard_uri"><code class="name flex">
 <span>def <span class="ident">cluster_dashboard_uri</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -878,7 +878,7 @@ request.</p></div>
         return &#34;Dashboard route not available yet, have you run cluster.up()?&#34;</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.cluster_uri"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.cluster_uri"><code class="name flex">
 <span>def <span class="ident">cluster_uri</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -894,7 +894,7 @@ request.</p></div>
     return f&#34;ray://{self.config.name}-head-svc.{self.config.namespace}.svc:10001&#34;</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.create_app_wrapper"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.create_app_wrapper"><code class="name flex">
 <span>def <span class="ident">create_app_wrapper</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -947,8 +947,8 @@ the specifications of the ClusterConfiguration.</p></div>
     )</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.details"><code class="name flex">
-<span>def <span class="ident">details</span></span>(<span>self, print_to_console: bool = True) ‑> <a title="codeflare_sdk.cluster.model.RayCluster" href="model.html#codeflare_sdk.cluster.model.RayCluster">RayCluster</a></span>
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.details"><code class="name flex">
+<span>def <span class="ident">details</span></span>(<span>self, print_to_console: bool = True) ‑> <a title="debug_codeflare_sdk.cluster.model.RayCluster" href="model.html#debug_codeflare_sdk.cluster.model.RayCluster">RayCluster</a></span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -963,7 +963,7 @@ the specifications of the ClusterConfiguration.</p></div>
     return cluster</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.down"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.down"><code class="name flex">
 <span>def <span class="ident">down</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -999,7 +999,7 @@ associated with the cluster.</p></div>
             raise osp</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.job_logs"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.job_logs"><code class="name flex">
 <span>def <span class="ident">job_logs</span></span>(<span>self, job_id: str) ‑> str</span>
 </code></dt>
 <dd>
@@ -1017,7 +1017,7 @@ associated with the cluster.</p></div>
     return client.get_job_logs(job_id)</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.job_status"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.job_status"><code class="name flex">
 <span>def <span class="ident">job_status</span></span>(<span>self, job_id: str) ‑> str</span>
 </code></dt>
 <dd>
@@ -1035,7 +1035,7 @@ associated with the cluster.</p></div>
     return client.get_job_status(job_id)</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.list_jobs"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.list_jobs"><code class="name flex">
 <span>def <span class="ident">list_jobs</span></span>(<span>self) ‑> List[~T]</span>
 </code></dt>
 <dd>
@@ -1053,8 +1053,8 @@ associated with the cluster.</p></div>
     return client.list_jobs()</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.status"><code class="name flex">
-<span>def <span class="ident">status</span></span>(<span>self, print_to_console: bool = True) ‑> Tuple[<a title="codeflare_sdk.cluster.model.CodeFlareClusterStatus" href="model.html#codeflare_sdk.cluster.model.CodeFlareClusterStatus">CodeFlareClusterStatus</a>, bool]</span>
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.status"><code class="name flex">
+<span>def <span class="ident">status</span></span>(<span>self, print_to_console: bool = True) ‑> Tuple[<a title="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus" href="model.html#debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus">CodeFlareClusterStatus</a>, bool]</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Returns the requested cluster's status, as well as whether or not
@@ -1125,7 +1125,7 @@ it is ready for use.</p></div>
     return status, ready</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.torchx_config"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.torchx_config"><code class="name flex">
 <span>def <span class="ident">torchx_config</span></span>(<span>self, working_dir: str = None, requirements: str = None) ‑> Dict[str, str]</span>
 </code></dt>
 <dd>
@@ -1149,7 +1149,7 @@ it is ready for use.</p></div>
     return to_return</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.up"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.up"><code class="name flex">
 <span>def <span class="ident">up</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -1177,7 +1177,7 @@ the MCAD queue.</p></div>
         raise osp</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.cluster.Cluster.wait_ready"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.cluster.Cluster.wait_ready"><code class="name flex">
 <span>def <span class="ident">wait_ready</span></span>(<span>self, timeout: Optional[int] = None)</span>
 </code></dt>
 <dd>
@@ -1223,33 +1223,33 @@ Checks every five seconds.</p></div>
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="codeflare_sdk.cluster" href="index.html">codeflare_sdk.cluster</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster" href="index.html">debug_codeflare_sdk.cluster</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-functions">Functions</a></h3>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.cluster.list_all_clusters" href="#codeflare_sdk.cluster.cluster.list_all_clusters">list_all_clusters</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.list_all_queued" href="#codeflare_sdk.cluster.cluster.list_all_queued">list_all_queued</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.list_all_clusters" href="#debug_codeflare_sdk.cluster.cluster.list_all_clusters">list_all_clusters</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.list_all_queued" href="#debug_codeflare_sdk.cluster.cluster.list_all_queued">list_all_queued</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.cluster.Cluster" href="#codeflare_sdk.cluster.cluster.Cluster">Cluster</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster" href="#debug_codeflare_sdk.cluster.cluster.Cluster">Cluster</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.cluster_dashboard_uri" href="#codeflare_sdk.cluster.cluster.Cluster.cluster_dashboard_uri">cluster_dashboard_uri</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.cluster_uri" href="#codeflare_sdk.cluster.cluster.Cluster.cluster_uri">cluster_uri</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.create_app_wrapper" href="#codeflare_sdk.cluster.cluster.Cluster.create_app_wrapper">create_app_wrapper</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.details" href="#codeflare_sdk.cluster.cluster.Cluster.details">details</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.down" href="#codeflare_sdk.cluster.cluster.Cluster.down">down</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.job_logs" href="#codeflare_sdk.cluster.cluster.Cluster.job_logs">job_logs</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.job_status" href="#codeflare_sdk.cluster.cluster.Cluster.job_status">job_status</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.list_jobs" href="#codeflare_sdk.cluster.cluster.Cluster.list_jobs">list_jobs</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.status" href="#codeflare_sdk.cluster.cluster.Cluster.status">status</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.torchx_config" href="#codeflare_sdk.cluster.cluster.Cluster.torchx_config">torchx_config</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.torchx_scheduler" href="#codeflare_sdk.cluster.cluster.Cluster.torchx_scheduler">torchx_scheduler</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.up" href="#codeflare_sdk.cluster.cluster.Cluster.up">up</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.cluster.Cluster.wait_ready" href="#codeflare_sdk.cluster.cluster.Cluster.wait_ready">wait_ready</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.cluster_dashboard_uri" href="#debug_codeflare_sdk.cluster.cluster.Cluster.cluster_dashboard_uri">cluster_dashboard_uri</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.cluster_uri" href="#debug_codeflare_sdk.cluster.cluster.Cluster.cluster_uri">cluster_uri</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.create_app_wrapper" href="#debug_codeflare_sdk.cluster.cluster.Cluster.create_app_wrapper">create_app_wrapper</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.details" href="#debug_codeflare_sdk.cluster.cluster.Cluster.details">details</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.down" href="#debug_codeflare_sdk.cluster.cluster.Cluster.down">down</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.job_logs" href="#debug_codeflare_sdk.cluster.cluster.Cluster.job_logs">job_logs</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.job_status" href="#debug_codeflare_sdk.cluster.cluster.Cluster.job_status">job_status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.list_jobs" href="#debug_codeflare_sdk.cluster.cluster.Cluster.list_jobs">list_jobs</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.status" href="#debug_codeflare_sdk.cluster.cluster.Cluster.status">status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.torchx_config" href="#debug_codeflare_sdk.cluster.cluster.Cluster.torchx_config">torchx_config</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.torchx_scheduler" href="#debug_codeflare_sdk.cluster.cluster.Cluster.torchx_scheduler">torchx_scheduler</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.up" href="#debug_codeflare_sdk.cluster.cluster.Cluster.up">up</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.cluster.Cluster.wait_ready" href="#debug_codeflare_sdk.cluster.cluster.Cluster.wait_ready">wait_ready</a></code></li>
 </ul>
 </li>
 </ul>

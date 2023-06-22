@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>codeflare_sdk.cluster.model API documentation</title>
+<title>debug_codeflare_sdk.cluster.model API documentation</title>
 <meta name="description" content="The model sub-module defines Enums containing information for Ray cluster
 states and AppWrapper states, and CodeFlare cluster states, as well as
 …" />
@@ -21,7 +21,7 @@ states and AppWrapper states, and CodeFlare cluster states, as well as
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>codeflare_sdk.cluster.model</code></h1>
+<h1 class="title">Module <code>debug_codeflare_sdk.cluster.model</code></h1>
 </header>
 <section id="section-intro">
 <p>The model sub-module defines Enums containing information for Ray cluster
@@ -131,9 +131,9 @@ class AppWrapper:
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="codeflare_sdk.cluster.model.AppWrapper"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapper"><code class="flex name class">
 <span>class <span class="ident">AppWrapper</span></span>
-<span>(</span><span>name: str, status: <a title="codeflare_sdk.cluster.model.AppWrapperStatus" href="#codeflare_sdk.cluster.model.AppWrapperStatus">AppWrapperStatus</a>, can_run: bool, job_state: str)</span>
+<span>(</span><span>name: str, status: <a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus">AppWrapperStatus</a>, can_run: bool, job_state: str)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>For storing information about an AppWrapper.</p></div>
@@ -153,25 +153,25 @@ class AppWrapper:
 </details>
 <h3>Class variables</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.model.AppWrapper.can_run"><code class="name">var <span class="ident">can_run</span> : bool</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapper.can_run"><code class="name">var <span class="ident">can_run</span> : bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapper.job_state"><code class="name">var <span class="ident">job_state</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapper.job_state"><code class="name">var <span class="ident">job_state</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapper.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapper.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapper.status"><code class="name">var <span class="ident">status</span> : <a title="codeflare_sdk.cluster.model.AppWrapperStatus" href="#codeflare_sdk.cluster.model.AppWrapperStatus">AppWrapperStatus</a></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapper.status"><code class="name">var <span class="ident">status</span> : <a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus">AppWrapperStatus</a></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapperStatus"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapperStatus"><code class="flex name class">
 <span>class <span class="ident">AppWrapperStatus</span></span>
 <span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
 </code></dt>
@@ -199,33 +199,33 @@ class AppWrapper:
 </ul>
 <h3>Class variables</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.model.AppWrapperStatus.COMPLETED"><code class="name">var <span class="ident">COMPLETED</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapperStatus.COMPLETED"><code class="name">var <span class="ident">COMPLETED</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapperStatus.DELETED"><code class="name">var <span class="ident">DELETED</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapperStatus.DELETED"><code class="name">var <span class="ident">DELETED</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapperStatus.FAILED"><code class="name">var <span class="ident">FAILED</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapperStatus.FAILED"><code class="name">var <span class="ident">FAILED</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapperStatus.PENDING"><code class="name">var <span class="ident">PENDING</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapperStatus.PENDING"><code class="name">var <span class="ident">PENDING</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING"><code class="name">var <span class="ident">RUNNING</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING"><code class="name">var <span class="ident">RUNNING</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING_HOLD_COMPLETION"><code class="name">var <span class="ident">RUNNING_HOLD_COMPLETION</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING_HOLD_COMPLETION"><code class="name">var <span class="ident">RUNNING_HOLD_COMPLETION</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.cluster.model.CodeFlareClusterStatus"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus"><code class="flex name class">
 <span>class <span class="ident">CodeFlareClusterStatus</span></span>
 <span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
 </code></dt>
@@ -252,31 +252,31 @@ class AppWrapper:
 </ul>
 <h3>Class variables</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.model.CodeFlareClusterStatus.FAILED"><code class="name">var <span class="ident">FAILED</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.FAILED"><code class="name">var <span class="ident">FAILED</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.CodeFlareClusterStatus.QUEUED"><code class="name">var <span class="ident">QUEUED</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.QUEUED"><code class="name">var <span class="ident">QUEUED</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.CodeFlareClusterStatus.READY"><code class="name">var <span class="ident">READY</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.READY"><code class="name">var <span class="ident">READY</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.CodeFlareClusterStatus.STARTING"><code class="name">var <span class="ident">STARTING</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.STARTING"><code class="name">var <span class="ident">STARTING</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.CodeFlareClusterStatus.UNKNOWN"><code class="name">var <span class="ident">UNKNOWN</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.UNKNOWN"><code class="name">var <span class="ident">UNKNOWN</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster"><code class="flex name class">
 <span>class <span class="ident">RayCluster</span></span>
-<span>(</span><span>name: str, status: <a title="codeflare_sdk.cluster.model.RayClusterStatus" href="#codeflare_sdk.cluster.model.RayClusterStatus">RayClusterStatus</a>, min_workers: int, max_workers: int, worker_mem_min: str, worker_mem_max: str, worker_cpu: int, worker_gpu: int, namespace: str, dashboard: str)</span>
+<span>(</span><span>name: str, status: <a title="debug_codeflare_sdk.cluster.model.RayClusterStatus" href="#debug_codeflare_sdk.cluster.model.RayClusterStatus">RayClusterStatus</a>, min_workers: int, max_workers: int, worker_mem_min: str, worker_mem_max: str, worker_cpu: int, worker_gpu: int, namespace: str, dashboard: str)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>For storing information about a Ray cluster.</p></div>
@@ -302,49 +302,49 @@ class AppWrapper:
 </details>
 <h3>Class variables</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.model.RayCluster.dashboard"><code class="name">var <span class="ident">dashboard</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.dashboard"><code class="name">var <span class="ident">dashboard</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.max_workers"><code class="name">var <span class="ident">max_workers</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.max_workers"><code class="name">var <span class="ident">max_workers</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.min_workers"><code class="name">var <span class="ident">min_workers</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.min_workers"><code class="name">var <span class="ident">min_workers</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.namespace"><code class="name">var <span class="ident">namespace</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.namespace"><code class="name">var <span class="ident">namespace</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.status"><code class="name">var <span class="ident">status</span> : <a title="codeflare_sdk.cluster.model.RayClusterStatus" href="#codeflare_sdk.cluster.model.RayClusterStatus">RayClusterStatus</a></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.status"><code class="name">var <span class="ident">status</span> : <a title="debug_codeflare_sdk.cluster.model.RayClusterStatus" href="#debug_codeflare_sdk.cluster.model.RayClusterStatus">RayClusterStatus</a></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.worker_cpu"><code class="name">var <span class="ident">worker_cpu</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.worker_cpu"><code class="name">var <span class="ident">worker_cpu</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.worker_gpu"><code class="name">var <span class="ident">worker_gpu</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.worker_gpu"><code class="name">var <span class="ident">worker_gpu</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.worker_mem_max"><code class="name">var <span class="ident">worker_mem_max</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.worker_mem_max"><code class="name">var <span class="ident">worker_mem_max</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayCluster.worker_mem_min"><code class="name">var <span class="ident">worker_mem_min</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayCluster.worker_mem_min"><code class="name">var <span class="ident">worker_mem_min</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayClusterStatus"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.model.RayClusterStatus"><code class="flex name class">
 <span>class <span class="ident">RayClusterStatus</span></span>
 <span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
 </code></dt>
@@ -371,19 +371,19 @@ class AppWrapper:
 </ul>
 <h3>Class variables</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.model.RayClusterStatus.FAILED"><code class="name">var <span class="ident">FAILED</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayClusterStatus.FAILED"><code class="name">var <span class="ident">FAILED</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayClusterStatus.READY"><code class="name">var <span class="ident">READY</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayClusterStatus.READY"><code class="name">var <span class="ident">READY</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayClusterStatus.UNHEALTHY"><code class="name">var <span class="ident">UNHEALTHY</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayClusterStatus.UNHEALTHY"><code class="name">var <span class="ident">UNHEALTHY</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.model.RayClusterStatus.UNKNOWN"><code class="name">var <span class="ident">UNKNOWN</span></code></dt>
+<dt id="debug_codeflare_sdk.cluster.model.RayClusterStatus.UNKNOWN"><code class="name">var <span class="ident">UNKNOWN</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -400,63 +400,63 @@ class AppWrapper:
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="codeflare_sdk.cluster" href="index.html">codeflare_sdk.cluster</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster" href="index.html">debug_codeflare_sdk.cluster</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.model.AppWrapper" href="#codeflare_sdk.cluster.model.AppWrapper">AppWrapper</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.model.AppWrapper" href="#debug_codeflare_sdk.cluster.model.AppWrapper">AppWrapper</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapper.can_run" href="#codeflare_sdk.cluster.model.AppWrapper.can_run">can_run</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapper.job_state" href="#codeflare_sdk.cluster.model.AppWrapper.job_state">job_state</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapper.name" href="#codeflare_sdk.cluster.model.AppWrapper.name">name</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapper.status" href="#codeflare_sdk.cluster.model.AppWrapper.status">status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapper.can_run" href="#debug_codeflare_sdk.cluster.model.AppWrapper.can_run">can_run</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapper.job_state" href="#debug_codeflare_sdk.cluster.model.AppWrapper.job_state">job_state</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapper.name" href="#debug_codeflare_sdk.cluster.model.AppWrapper.name">name</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapper.status" href="#debug_codeflare_sdk.cluster.model.AppWrapper.status">status</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.model.AppWrapperStatus" href="#codeflare_sdk.cluster.model.AppWrapperStatus">AppWrapperStatus</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus">AppWrapperStatus</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapperStatus.COMPLETED" href="#codeflare_sdk.cluster.model.AppWrapperStatus.COMPLETED">COMPLETED</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapperStatus.DELETED" href="#codeflare_sdk.cluster.model.AppWrapperStatus.DELETED">DELETED</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapperStatus.FAILED" href="#codeflare_sdk.cluster.model.AppWrapperStatus.FAILED">FAILED</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapperStatus.PENDING" href="#codeflare_sdk.cluster.model.AppWrapperStatus.PENDING">PENDING</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING" href="#codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING">RUNNING</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING_HOLD_COMPLETION" href="#codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING_HOLD_COMPLETION">RUNNING_HOLD_COMPLETION</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus.COMPLETED" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus.COMPLETED">COMPLETED</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus.DELETED" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus.DELETED">DELETED</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus.FAILED" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus.FAILED">FAILED</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus.PENDING" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus.PENDING">PENDING</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING">RUNNING</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING_HOLD_COMPLETION" href="#debug_codeflare_sdk.cluster.model.AppWrapperStatus.RUNNING_HOLD_COMPLETION">RUNNING_HOLD_COMPLETION</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.model.CodeFlareClusterStatus" href="#codeflare_sdk.cluster.model.CodeFlareClusterStatus">CodeFlareClusterStatus</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus" href="#debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus">CodeFlareClusterStatus</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.model.CodeFlareClusterStatus.FAILED" href="#codeflare_sdk.cluster.model.CodeFlareClusterStatus.FAILED">FAILED</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.CodeFlareClusterStatus.QUEUED" href="#codeflare_sdk.cluster.model.CodeFlareClusterStatus.QUEUED">QUEUED</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.CodeFlareClusterStatus.READY" href="#codeflare_sdk.cluster.model.CodeFlareClusterStatus.READY">READY</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.CodeFlareClusterStatus.STARTING" href="#codeflare_sdk.cluster.model.CodeFlareClusterStatus.STARTING">STARTING</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.CodeFlareClusterStatus.UNKNOWN" href="#codeflare_sdk.cluster.model.CodeFlareClusterStatus.UNKNOWN">UNKNOWN</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.FAILED" href="#debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.FAILED">FAILED</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.QUEUED" href="#debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.QUEUED">QUEUED</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.READY" href="#debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.READY">READY</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.STARTING" href="#debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.STARTING">STARTING</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.UNKNOWN" href="#debug_codeflare_sdk.cluster.model.CodeFlareClusterStatus.UNKNOWN">UNKNOWN</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.model.RayCluster" href="#codeflare_sdk.cluster.model.RayCluster">RayCluster</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.model.RayCluster" href="#debug_codeflare_sdk.cluster.model.RayCluster">RayCluster</a></code></h4>
 <ul class="two-column">
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.dashboard" href="#codeflare_sdk.cluster.model.RayCluster.dashboard">dashboard</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.max_workers" href="#codeflare_sdk.cluster.model.RayCluster.max_workers">max_workers</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.min_workers" href="#codeflare_sdk.cluster.model.RayCluster.min_workers">min_workers</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.name" href="#codeflare_sdk.cluster.model.RayCluster.name">name</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.namespace" href="#codeflare_sdk.cluster.model.RayCluster.namespace">namespace</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.status" href="#codeflare_sdk.cluster.model.RayCluster.status">status</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.worker_cpu" href="#codeflare_sdk.cluster.model.RayCluster.worker_cpu">worker_cpu</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.worker_gpu" href="#codeflare_sdk.cluster.model.RayCluster.worker_gpu">worker_gpu</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.worker_mem_max" href="#codeflare_sdk.cluster.model.RayCluster.worker_mem_max">worker_mem_max</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayCluster.worker_mem_min" href="#codeflare_sdk.cluster.model.RayCluster.worker_mem_min">worker_mem_min</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.dashboard" href="#debug_codeflare_sdk.cluster.model.RayCluster.dashboard">dashboard</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.max_workers" href="#debug_codeflare_sdk.cluster.model.RayCluster.max_workers">max_workers</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.min_workers" href="#debug_codeflare_sdk.cluster.model.RayCluster.min_workers">min_workers</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.name" href="#debug_codeflare_sdk.cluster.model.RayCluster.name">name</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.namespace" href="#debug_codeflare_sdk.cluster.model.RayCluster.namespace">namespace</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.status" href="#debug_codeflare_sdk.cluster.model.RayCluster.status">status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.worker_cpu" href="#debug_codeflare_sdk.cluster.model.RayCluster.worker_cpu">worker_cpu</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.worker_gpu" href="#debug_codeflare_sdk.cluster.model.RayCluster.worker_gpu">worker_gpu</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.worker_mem_max" href="#debug_codeflare_sdk.cluster.model.RayCluster.worker_mem_max">worker_mem_max</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayCluster.worker_mem_min" href="#debug_codeflare_sdk.cluster.model.RayCluster.worker_mem_min">worker_mem_min</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.model.RayClusterStatus" href="#codeflare_sdk.cluster.model.RayClusterStatus">RayClusterStatus</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.model.RayClusterStatus" href="#debug_codeflare_sdk.cluster.model.RayClusterStatus">RayClusterStatus</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.model.RayClusterStatus.FAILED" href="#codeflare_sdk.cluster.model.RayClusterStatus.FAILED">FAILED</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayClusterStatus.READY" href="#codeflare_sdk.cluster.model.RayClusterStatus.READY">READY</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayClusterStatus.UNHEALTHY" href="#codeflare_sdk.cluster.model.RayClusterStatus.UNHEALTHY">UNHEALTHY</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.model.RayClusterStatus.UNKNOWN" href="#codeflare_sdk.cluster.model.RayClusterStatus.UNKNOWN">UNKNOWN</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayClusterStatus.FAILED" href="#debug_codeflare_sdk.cluster.model.RayClusterStatus.FAILED">FAILED</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayClusterStatus.READY" href="#debug_codeflare_sdk.cluster.model.RayClusterStatus.READY">READY</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayClusterStatus.UNHEALTHY" href="#debug_codeflare_sdk.cluster.model.RayClusterStatus.UNHEALTHY">UNHEALTHY</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.model.RayClusterStatus.UNKNOWN" href="#debug_codeflare_sdk.cluster.model.RayClusterStatus.UNKNOWN">UNKNOWN</a></code></li>
 </ul>
 </li>
 </ul>

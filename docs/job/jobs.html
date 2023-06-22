@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>codeflare_sdk.job.jobs API documentation</title>
+<title>debug_codeflare_sdk.job.jobs API documentation</title>
 <meta name="description" content="" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
@@ -19,7 +19,7 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>codeflare_sdk.job.jobs</code></h1>
+<h1 class="title">Module <code>debug_codeflare_sdk.job.jobs</code></h1>
 </header>
 <section id="section-intro">
 <details class="source">
@@ -225,9 +225,9 @@ class DDPJob(Job):
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="codeflare_sdk.job.jobs.DDPJob"><code class="flex name class">
+<dt id="debug_codeflare_sdk.job.jobs.DDPJob"><code class="flex name class">
 <span>class <span class="ident">DDPJob</span></span>
-<span>(</span><span>job_definition: <a title="codeflare_sdk.job.jobs.DDPJobDefinition" href="#codeflare_sdk.job.jobs.DDPJobDefinition">DDPJobDefinition</a>, cluster: Cluster = None)</span>
+<span>(</span><span>job_definition: <a title="debug_codeflare_sdk.job.jobs.DDPJobDefinition" href="#debug_codeflare_sdk.job.jobs.DDPJobDefinition">DDPJobDefinition</a>, cluster: Cluster = None)</span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -258,11 +258,11 @@ class DDPJob(Job):
 </details>
 <h3>Ancestors</h3>
 <ul class="hlist">
-<li><a title="codeflare_sdk.job.jobs.Job" href="#codeflare_sdk.job.jobs.Job">Job</a></li>
+<li><a title="debug_codeflare_sdk.job.jobs.Job" href="#debug_codeflare_sdk.job.jobs.Job">Job</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.job.jobs.DDPJob.cancel"><code class="name flex">
+<dt id="debug_codeflare_sdk.job.jobs.DDPJob.cancel"><code class="name flex">
 <span>def <span class="ident">cancel</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -275,7 +275,7 @@ class DDPJob(Job):
     torchx_runner.cancel(self._app_handle)</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.job.jobs.DDPJob.logs"><code class="name flex">
+<dt id="debug_codeflare_sdk.job.jobs.DDPJob.logs"><code class="name flex">
 <span>def <span class="ident">logs</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -288,7 +288,7 @@ class DDPJob(Job):
     return &#34;&#34;.join(torchx_runner.log_lines(self._app_handle, None))</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.job.jobs.DDPJob.status"><code class="name flex">
+<dt id="debug_codeflare_sdk.job.jobs.DDPJob.status"><code class="name flex">
 <span>def <span class="ident">status</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -303,9 +303,9 @@ class DDPJob(Job):
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.job.jobs.DDPJobDefinition"><code class="flex name class">
+<dt id="debug_codeflare_sdk.job.jobs.DDPJobDefinition"><code class="flex name class">
 <span>class <span class="ident">DDPJobDefinition</span></span>
-<span>(</span><span>script: Optional[str] = None, m: Optional[str] = None, script_args: Optional[List[str]] = None, name: Optional[str] = None, cpu: Optional[int] = None, gpu: Optional[int] = None, memMB: Optional[int] = None, h: Optional[str] = None, j: Optional[str] = None, env: Optional[Dict[str, str]] = None, max_retries: int = 0, mounts: Optional[List[str]] = None, rdzv_port: int = 29500, rdzv_backend: str = None, scheduler_args: Optional[Dict[str, str]] = None, image: Optional[str] = None, workspace: Optional[str] = 'file:///home/meyceoz/Documents/codeflare-sdk')</span>
+<span>(</span><span>script: Optional[str] = None, m: Optional[str] = None, script_args: Optional[List[str]] = None, name: Optional[str] = None, cpu: Optional[int] = None, gpu: Optional[int] = None, memMB: Optional[int] = None, h: Optional[str] = None, j: Optional[str] = None, env: Optional[Dict[str, str]] = None, max_retries: int = 0, mounts: Optional[List[str]] = None, rdzv_port: int = 29500, rdzv_backend: str = None, scheduler_args: Optional[Dict[str, str]] = None, image: Optional[str] = None, workspace: Optional[str] = 'file:///home/runner/work/codeflare-sdk/codeflare-sdk')</span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -435,12 +435,12 @@ class DDPJob(Job):
 </details>
 <h3>Ancestors</h3>
 <ul class="hlist">
-<li><a title="codeflare_sdk.job.jobs.JobDefinition" href="#codeflare_sdk.job.jobs.JobDefinition">JobDefinition</a></li>
+<li><a title="debug_codeflare_sdk.job.jobs.JobDefinition" href="#debug_codeflare_sdk.job.jobs.JobDefinition">JobDefinition</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.job.jobs.DDPJobDefinition.submit"><code class="name flex">
-<span>def <span class="ident">submit</span></span>(<span>self, cluster: Cluster = None) ‑> <a title="codeflare_sdk.job.jobs.Job" href="#codeflare_sdk.job.jobs.Job">Job</a></span>
+<dt id="debug_codeflare_sdk.job.jobs.DDPJobDefinition.submit"><code class="name flex">
+<span>def <span class="ident">submit</span></span>(<span>self, cluster: Cluster = None) ‑> <a title="debug_codeflare_sdk.job.jobs.Job" href="#debug_codeflare_sdk.job.jobs.Job">Job</a></span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -454,7 +454,7 @@ class DDPJob(Job):
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.job.jobs.Job"><code class="flex name class">
+<dt id="debug_codeflare_sdk.job.jobs.Job"><code class="flex name class">
 <span>class <span class="ident">Job</span></span>
 </code></dt>
 <dd>
@@ -472,11 +472,11 @@ class DDPJob(Job):
 </details>
 <h3>Subclasses</h3>
 <ul class="hlist">
-<li><a title="codeflare_sdk.job.jobs.DDPJob" href="#codeflare_sdk.job.jobs.DDPJob">DDPJob</a></li>
+<li><a title="debug_codeflare_sdk.job.jobs.DDPJob" href="#debug_codeflare_sdk.job.jobs.DDPJob">DDPJob</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.job.jobs.Job.logs"><code class="name flex">
+<dt id="debug_codeflare_sdk.job.jobs.Job.logs"><code class="name flex">
 <span>def <span class="ident">logs</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -489,7 +489,7 @@ class DDPJob(Job):
     pass</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.job.jobs.Job.status"><code class="name flex">
+<dt id="debug_codeflare_sdk.job.jobs.Job.status"><code class="name flex">
 <span>def <span class="ident">status</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -504,7 +504,7 @@ class DDPJob(Job):
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.job.jobs.JobDefinition"><code class="flex name class">
+<dt id="debug_codeflare_sdk.job.jobs.JobDefinition"><code class="flex name class">
 <span>class <span class="ident">JobDefinition</span></span>
 </code></dt>
 <dd>
@@ -522,11 +522,11 @@ class DDPJob(Job):
 </details>
 <h3>Subclasses</h3>
 <ul class="hlist">
-<li><a title="codeflare_sdk.job.jobs.DDPJobDefinition" href="#codeflare_sdk.job.jobs.DDPJobDefinition">DDPJobDefinition</a></li>
+<li><a title="debug_codeflare_sdk.job.jobs.DDPJobDefinition" href="#debug_codeflare_sdk.job.jobs.DDPJobDefinition">DDPJobDefinition</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.job.jobs.JobDefinition.submit"><code class="name flex">
+<dt id="debug_codeflare_sdk.job.jobs.JobDefinition.submit"><code class="name flex">
 <span>def <span class="ident">submit</span></span>(<span>self, cluster: Cluster)</span>
 </code></dt>
 <dd>
@@ -552,36 +552,36 @@ class DDPJob(Job):
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="codeflare_sdk.job" href="index.html">codeflare_sdk.job</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job" href="index.html">debug_codeflare_sdk.job</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="codeflare_sdk.job.jobs.DDPJob" href="#codeflare_sdk.job.jobs.DDPJob">DDPJob</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.job.jobs.DDPJob" href="#debug_codeflare_sdk.job.jobs.DDPJob">DDPJob</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.job.jobs.DDPJob.cancel" href="#codeflare_sdk.job.jobs.DDPJob.cancel">cancel</a></code></li>
-<li><code><a title="codeflare_sdk.job.jobs.DDPJob.logs" href="#codeflare_sdk.job.jobs.DDPJob.logs">logs</a></code></li>
-<li><code><a title="codeflare_sdk.job.jobs.DDPJob.status" href="#codeflare_sdk.job.jobs.DDPJob.status">status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job.jobs.DDPJob.cancel" href="#debug_codeflare_sdk.job.jobs.DDPJob.cancel">cancel</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job.jobs.DDPJob.logs" href="#debug_codeflare_sdk.job.jobs.DDPJob.logs">logs</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job.jobs.DDPJob.status" href="#debug_codeflare_sdk.job.jobs.DDPJob.status">status</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.job.jobs.DDPJobDefinition" href="#codeflare_sdk.job.jobs.DDPJobDefinition">DDPJobDefinition</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.job.jobs.DDPJobDefinition" href="#debug_codeflare_sdk.job.jobs.DDPJobDefinition">DDPJobDefinition</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.job.jobs.DDPJobDefinition.submit" href="#codeflare_sdk.job.jobs.DDPJobDefinition.submit">submit</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job.jobs.DDPJobDefinition.submit" href="#debug_codeflare_sdk.job.jobs.DDPJobDefinition.submit">submit</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.job.jobs.Job" href="#codeflare_sdk.job.jobs.Job">Job</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.job.jobs.Job" href="#debug_codeflare_sdk.job.jobs.Job">Job</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.job.jobs.Job.logs" href="#codeflare_sdk.job.jobs.Job.logs">logs</a></code></li>
-<li><code><a title="codeflare_sdk.job.jobs.Job.status" href="#codeflare_sdk.job.jobs.Job.status">status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job.jobs.Job.logs" href="#debug_codeflare_sdk.job.jobs.Job.logs">logs</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job.jobs.Job.status" href="#debug_codeflare_sdk.job.jobs.Job.status">status</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.job.jobs.JobDefinition" href="#codeflare_sdk.job.jobs.JobDefinition">JobDefinition</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.job.jobs.JobDefinition" href="#debug_codeflare_sdk.job.jobs.JobDefinition">JobDefinition</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.job.jobs.JobDefinition.submit" href="#codeflare_sdk.job.jobs.JobDefinition.submit">submit</a></code></li>
+<li><code><a title="debug_codeflare_sdk.job.jobs.JobDefinition.submit" href="#debug_codeflare_sdk.job.jobs.JobDefinition.submit">submit</a></code></li>
 </ul>
 </li>
 </ul>

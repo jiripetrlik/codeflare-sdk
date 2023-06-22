@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>codeflare_sdk.utils.pretty_print API documentation</title>
+<title>debug_codeflare_sdk.utils.pretty_print API documentation</title>
 <meta name="description" content="This sub-module exists primarily to be used internally by the Cluster object
 (in the cluster sub-module) for pretty-printing cluster status and details." />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
@@ -20,7 +20,7 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>codeflare_sdk.utils.pretty_print</code></h1>
+<h1 class="title">Module <code>debug_codeflare_sdk.utils.pretty_print</code></h1>
 </header>
 <section id="section-intro">
 <p>This sub-module exists primarily to be used internally by the Cluster object
@@ -224,8 +224,8 @@ def print_clusters(clusters: List[RayCluster]):
 <section>
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
-<dt id="codeflare_sdk.utils.pretty_print.print_app_wrappers_status"><code class="name flex">
-<span>def <span class="ident">print_app_wrappers_status</span></span>(<span>app_wrappers: List[<a title="codeflare_sdk.cluster.model.AppWrapper" href="../cluster/model.html#codeflare_sdk.cluster.model.AppWrapper">AppWrapper</a>], starting: bool = False)</span>
+<dt id="debug_codeflare_sdk.utils.pretty_print.print_app_wrappers_status"><code class="name flex">
+<span>def <span class="ident">print_app_wrappers_status</span></span>(<span>app_wrappers: List[<a title="debug_codeflare_sdk.cluster.model.AppWrapper" href="../cluster/model.html#debug_codeflare_sdk.cluster.model.AppWrapper">AppWrapper</a>], starting: bool = False)</span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -257,8 +257,8 @@ def print_clusters(clusters: List[RayCluster]):
     console.print(Panel.fit(table))</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.utils.pretty_print.print_cluster_status"><code class="name flex">
-<span>def <span class="ident">print_cluster_status</span></span>(<span>cluster: <a title="codeflare_sdk.cluster.model.RayCluster" href="../cluster/model.html#codeflare_sdk.cluster.model.RayCluster">RayCluster</a>)</span>
+<dt id="debug_codeflare_sdk.utils.pretty_print.print_cluster_status"><code class="name flex">
+<span>def <span class="ident">print_cluster_status</span></span>(<span>cluster: <a title="debug_codeflare_sdk.cluster.model.RayCluster" href="../cluster/model.html#debug_codeflare_sdk.cluster.model.RayCluster">RayCluster</a>)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Pretty prints the status of a passed-in cluster</p></div>
@@ -309,8 +309,8 @@ def print_clusters(clusters: List[RayCluster]):
     console.print(table5)</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.utils.pretty_print.print_clusters"><code class="name flex">
-<span>def <span class="ident">print_clusters</span></span>(<span>clusters: List[<a title="codeflare_sdk.cluster.model.RayCluster" href="../cluster/model.html#codeflare_sdk.cluster.model.RayCluster">RayCluster</a>])</span>
+<dt id="debug_codeflare_sdk.utils.pretty_print.print_clusters"><code class="name flex">
+<span>def <span class="ident">print_clusters</span></span>(<span>clusters: List[<a title="debug_codeflare_sdk.cluster.model.RayCluster" href="../cluster/model.html#debug_codeflare_sdk.cluster.model.RayCluster">RayCluster</a>])</span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -405,7 +405,7 @@ def print_clusters(clusters: List[RayCluster]):
             console.print(Panel.fit(table4))</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.utils.pretty_print.print_no_resources_found"><code class="name flex">
+<dt id="debug_codeflare_sdk.utils.pretty_print.print_no_resources_found"><code class="name flex">
 <span>def <span class="ident">print_no_resources_found</span></span>(<span>)</span>
 </code></dt>
 <dd>
@@ -432,15 +432,15 @@ def print_clusters(clusters: List[RayCluster]):
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="codeflare_sdk.utils" href="index.html">codeflare_sdk.utils</a></code></li>
+<li><code><a title="debug_codeflare_sdk.utils" href="index.html">debug_codeflare_sdk.utils</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-functions">Functions</a></h3>
 <ul class="">
-<li><code><a title="codeflare_sdk.utils.pretty_print.print_app_wrappers_status" href="#codeflare_sdk.utils.pretty_print.print_app_wrappers_status">print_app_wrappers_status</a></code></li>
-<li><code><a title="codeflare_sdk.utils.pretty_print.print_cluster_status" href="#codeflare_sdk.utils.pretty_print.print_cluster_status">print_cluster_status</a></code></li>
-<li><code><a title="codeflare_sdk.utils.pretty_print.print_clusters" href="#codeflare_sdk.utils.pretty_print.print_clusters">print_clusters</a></code></li>
-<li><code><a title="codeflare_sdk.utils.pretty_print.print_no_resources_found" href="#codeflare_sdk.utils.pretty_print.print_no_resources_found">print_no_resources_found</a></code></li>
+<li><code><a title="debug_codeflare_sdk.utils.pretty_print.print_app_wrappers_status" href="#debug_codeflare_sdk.utils.pretty_print.print_app_wrappers_status">print_app_wrappers_status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.utils.pretty_print.print_cluster_status" href="#debug_codeflare_sdk.utils.pretty_print.print_cluster_status">print_cluster_status</a></code></li>
+<li><code><a title="debug_codeflare_sdk.utils.pretty_print.print_clusters" href="#debug_codeflare_sdk.utils.pretty_print.print_clusters">print_clusters</a></code></li>
+<li><code><a title="debug_codeflare_sdk.utils.pretty_print.print_no_resources_found" href="#debug_codeflare_sdk.utils.pretty_print.print_no_resources_found">print_no_resources_found</a></code></li>
 </ul>
 </li>
 </ul>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>codeflare_sdk.cluster.auth API documentation</title>
+<title>debug_codeflare_sdk.cluster.auth API documentation</title>
 <meta name="description" content="The auth sub-module contains the definitions for the Authentication objects, which represent
 the methods by which a user can authenticate to their …" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
@@ -20,11 +20,11 @@ the methods by which a user can authenticate to their …" />
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>codeflare_sdk.cluster.auth</code></h1>
+<h1 class="title">Module <code>debug_codeflare_sdk.cluster.auth</code></h1>
 </header>
 <section id="section-intro">
 <p>The auth sub-module contains the definitions for the Authentication objects, which represent
-the methods by which a user can authenticate to their cluster(s). The abstract class, <code><a title="codeflare_sdk.cluster.auth.Authentication" href="#codeflare_sdk.cluster.auth.Authentication">Authentication</a></code>,
+the methods by which a user can authenticate to their cluster(s). The abstract class, <code><a title="debug_codeflare_sdk.cluster.auth.Authentication" href="#debug_codeflare_sdk.cluster.auth.Authentication">Authentication</a></code>,
 contains two required methods <code>login()</code> and <code>logout()</code>. Users can use one of the existing concrete classes to
 authenticate to their cluster or add their own custom concrete classes here.</p>
 <details class="source">
@@ -164,7 +164,7 @@ class PasswordUserAuthentication(Authentication):
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="codeflare_sdk.cluster.auth.Authentication"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.auth.Authentication"><code class="flex name class">
 <span>class <span class="ident">Authentication</span></span>
 </code></dt>
 <dd>
@@ -194,12 +194,12 @@ Specifically, this class defines the need for a <code>login()</code> and a <code
 </details>
 <h3>Subclasses</h3>
 <ul class="hlist">
-<li><a title="codeflare_sdk.cluster.auth.PasswordUserAuthentication" href="#codeflare_sdk.cluster.auth.PasswordUserAuthentication">PasswordUserAuthentication</a></li>
-<li><a title="codeflare_sdk.cluster.auth.TokenAuthentication" href="#codeflare_sdk.cluster.auth.TokenAuthentication">TokenAuthentication</a></li>
+<li><a title="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication" href="#debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication">PasswordUserAuthentication</a></li>
+<li><a title="debug_codeflare_sdk.cluster.auth.TokenAuthentication" href="#debug_codeflare_sdk.cluster.auth.TokenAuthentication">TokenAuthentication</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.auth.Authentication.login"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.auth.Authentication.login"><code class="name flex">
 <span>def <span class="ident">login</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -215,7 +215,7 @@ Specifically, this class defines the need for a <code>login()</code> and a <code
     pass</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.auth.Authentication.logout"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.auth.Authentication.logout"><code class="name flex">
 <span>def <span class="ident">logout</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -233,12 +233,12 @@ Specifically, this class defines the need for a <code>login()</code> and a <code
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.cluster.auth.PasswordUserAuthentication"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication"><code class="flex name class">
 <span>class <span class="ident">PasswordUserAuthentication</span></span>
 <span>(</span><span>username: str = None, password: str = None)</span>
 </code></dt>
 <dd>
-<div class="desc"><p><code><a title="codeflare_sdk.cluster.auth.PasswordUserAuthentication" href="#codeflare_sdk.cluster.auth.PasswordUserAuthentication">PasswordUserAuthentication</a></code> is a subclass of <code><a title="codeflare_sdk.cluster.auth.Authentication" href="#codeflare_sdk.cluster.auth.Authentication">Authentication</a></code>. It can be used to authenticate to an OpenShift
+<div class="desc"><p><code><a title="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication" href="#debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication">PasswordUserAuthentication</a></code> is a subclass of <code><a title="debug_codeflare_sdk.cluster.auth.Authentication" href="#debug_codeflare_sdk.cluster.auth.Authentication">Authentication</a></code>. It can be used to authenticate to an OpenShift
 cluster when the user has a username and password.</p>
 <p>Initialize a PasswordUserAuthentication object that requires a value for <code>username</code>
 and <code>password</code> for authenticating to an OpenShift cluster.</p></div>
@@ -280,11 +280,11 @@ and <code>password</code> for authenticating to an OpenShift cluster.</p></div>
 </details>
 <h3>Ancestors</h3>
 <ul class="hlist">
-<li><a title="codeflare_sdk.cluster.auth.Authentication" href="#codeflare_sdk.cluster.auth.Authentication">Authentication</a></li>
+<li><a title="debug_codeflare_sdk.cluster.auth.Authentication" href="#debug_codeflare_sdk.cluster.auth.Authentication">Authentication</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.auth.PasswordUserAuthentication.login"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication.login"><code class="name flex">
 <span>def <span class="ident">login</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -301,7 +301,7 @@ and <code>password</code> for authenticating to an OpenShift cluster.</p></div>
     return response.out()</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.auth.PasswordUserAuthentication.logout"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication.logout"><code class="name flex">
 <span>def <span class="ident">logout</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -320,12 +320,12 @@ and <code>password</code> for authenticating to an OpenShift cluster.</p></div>
 </dd>
 </dl>
 </dd>
-<dt id="codeflare_sdk.cluster.auth.TokenAuthentication"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.auth.TokenAuthentication"><code class="flex name class">
 <span>class <span class="ident">TokenAuthentication</span></span>
 <span>(</span><span>token: str = None, server: str = None, skip_tls: bool = False)</span>
 </code></dt>
 <dd>
-<div class="desc"><p><code><a title="codeflare_sdk.cluster.auth.TokenAuthentication" href="#codeflare_sdk.cluster.auth.TokenAuthentication">TokenAuthentication</a></code> is a subclass of <code><a title="codeflare_sdk.cluster.auth.Authentication" href="#codeflare_sdk.cluster.auth.Authentication">Authentication</a></code>. It can be used to authenticate to an OpenShift
+<div class="desc"><p><code><a title="debug_codeflare_sdk.cluster.auth.TokenAuthentication" href="#debug_codeflare_sdk.cluster.auth.TokenAuthentication">TokenAuthentication</a></code> is a subclass of <code><a title="debug_codeflare_sdk.cluster.auth.Authentication" href="#debug_codeflare_sdk.cluster.auth.Authentication">Authentication</a></code>. It can be used to authenticate to an OpenShift
 cluster when the user has an API token and the API server address.</p>
 <p>Initialize a TokenAuthentication object that requires a value for <code>token</code>, the API Token
 and <code>server</code>, the API server address for authenticating to an OpenShift cluster.</p></div>
@@ -380,11 +380,11 @@ and <code>server</code>, the API server address for authenticating to an OpenShi
 </details>
 <h3>Ancestors</h3>
 <ul class="hlist">
-<li><a title="codeflare_sdk.cluster.auth.Authentication" href="#codeflare_sdk.cluster.auth.Authentication">Authentication</a></li>
+<li><a title="debug_codeflare_sdk.cluster.auth.Authentication" href="#debug_codeflare_sdk.cluster.auth.Authentication">Authentication</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.auth.TokenAuthentication.login"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.auth.TokenAuthentication.login"><code class="name flex">
 <span>def <span class="ident">login</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -417,7 +417,7 @@ to <code>True</code>.</p></div>
     return response.out()</code></pre>
 </details>
 </dd>
-<dt id="codeflare_sdk.cluster.auth.TokenAuthentication.logout"><code class="name flex">
+<dt id="debug_codeflare_sdk.cluster.auth.TokenAuthentication.logout"><code class="name flex">
 <span>def <span class="ident">logout</span></span>(<span>self) ‑> str</span>
 </code></dt>
 <dd>
@@ -448,30 +448,30 @@ to <code>True</code>.</p></div>
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="codeflare_sdk.cluster" href="index.html">codeflare_sdk.cluster</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster" href="index.html">debug_codeflare_sdk.cluster</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.auth.Authentication" href="#codeflare_sdk.cluster.auth.Authentication">Authentication</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.auth.Authentication" href="#debug_codeflare_sdk.cluster.auth.Authentication">Authentication</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.auth.Authentication.login" href="#codeflare_sdk.cluster.auth.Authentication.login">login</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.auth.Authentication.logout" href="#codeflare_sdk.cluster.auth.Authentication.logout">logout</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.auth.Authentication.login" href="#debug_codeflare_sdk.cluster.auth.Authentication.login">login</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.auth.Authentication.logout" href="#debug_codeflare_sdk.cluster.auth.Authentication.logout">logout</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.auth.PasswordUserAuthentication" href="#codeflare_sdk.cluster.auth.PasswordUserAuthentication">PasswordUserAuthentication</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication" href="#debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication">PasswordUserAuthentication</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.auth.PasswordUserAuthentication.login" href="#codeflare_sdk.cluster.auth.PasswordUserAuthentication.login">login</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.auth.PasswordUserAuthentication.logout" href="#codeflare_sdk.cluster.auth.PasswordUserAuthentication.logout">logout</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication.login" href="#debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication.login">login</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication.logout" href="#debug_codeflare_sdk.cluster.auth.PasswordUserAuthentication.logout">logout</a></code></li>
 </ul>
 </li>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.auth.TokenAuthentication" href="#codeflare_sdk.cluster.auth.TokenAuthentication">TokenAuthentication</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.auth.TokenAuthentication" href="#debug_codeflare_sdk.cluster.auth.TokenAuthentication">TokenAuthentication</a></code></h4>
 <ul class="">
-<li><code><a title="codeflare_sdk.cluster.auth.TokenAuthentication.login" href="#codeflare_sdk.cluster.auth.TokenAuthentication.login">login</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.auth.TokenAuthentication.logout" href="#codeflare_sdk.cluster.auth.TokenAuthentication.logout">logout</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.auth.TokenAuthentication.login" href="#debug_codeflare_sdk.cluster.auth.TokenAuthentication.login">login</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.auth.TokenAuthentication.logout" href="#debug_codeflare_sdk.cluster.auth.TokenAuthentication.logout">logout</a></code></li>
 </ul>
 </li>
 </ul>

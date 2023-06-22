@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>codeflare_sdk.cluster.config API documentation</title>
+<title>debug_codeflare_sdk.cluster.config API documentation</title>
 <meta name="description" content="The config sub-module contains the definition of the ClusterConfiguration dataclass,
 which is used to specify resource requirements and other details …" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
@@ -20,7 +20,7 @@ which is used to specify resource requirements and other details …" />
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>codeflare_sdk.cluster.config</code></h1>
+<h1 class="title">Module <code>debug_codeflare_sdk.cluster.config</code></h1>
 </header>
 <section id="section-intro">
 <p>The config sub-module contains the definition of the ClusterConfiguration dataclass,
@@ -91,9 +91,9 @@ class ClusterConfiguration:
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration"><code class="flex name class">
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration"><code class="flex name class">
 <span>class <span class="ident">ClusterConfiguration</span></span>
-<span>(</span><span>name: str, namespace: str = None, head_info: list = &lt;factory&gt;, machine_types: list = &lt;factory&gt;, min_cpus: int = 1, max_cpus: int = 1, min_worker: int = 1, max_worker: int = 1, min_memory: int = 2, max_memory: int = 2, gpu: int = 0, template: str = '/home/meyceoz/Documents/codeflare-sdk/src/codeflare_sdk/templates/base-template.yaml', instascale: bool = False, envs: dict = &lt;factory&gt;, image: str = 'ghcr.io/foundation-model-stack/base:ray2.1.0-py38-gpu-pytorch1.12.0cu116-20221213-193103')</span>
+<span>(</span><span>name: str, namespace: str = None, head_info: list = &lt;factory&gt;, machine_types: list = &lt;factory&gt;, min_cpus: int = 1, max_cpus: int = 1, min_worker: int = 1, max_worker: int = 1, min_memory: int = 2, max_memory: int = 2, gpu: int = 0, template: str = '/home/runner/work/codeflare-sdk/codeflare-sdk/src/debug_codeflare_sdk/templates/base-template.yaml', instascale: bool = False, envs: dict = &lt;factory&gt;, image: str = 'ghcr.io/foundation-model-stack/base:ray2.1.0-py38-gpu-pytorch1.12.0cu116-20221213-193103')</span>
 </code></dt>
 <dd>
 <div class="desc"><p>This dataclass is used to specify resource requirements and other details, and
@@ -126,63 +126,63 @@ is passed in as an argument when creating a Cluster object.</p></div>
 </details>
 <h3>Class variables</h3>
 <dl>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.envs"><code class="name">var <span class="ident">envs</span> : dict</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.envs"><code class="name">var <span class="ident">envs</span> : dict</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.gpu"><code class="name">var <span class="ident">gpu</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.gpu"><code class="name">var <span class="ident">gpu</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.head_info"><code class="name">var <span class="ident">head_info</span> : list</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.head_info"><code class="name">var <span class="ident">head_info</span> : list</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.image"><code class="name">var <span class="ident">image</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.image"><code class="name">var <span class="ident">image</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.instascale"><code class="name">var <span class="ident">instascale</span> : bool</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.instascale"><code class="name">var <span class="ident">instascale</span> : bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.machine_types"><code class="name">var <span class="ident">machine_types</span> : list</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.machine_types"><code class="name">var <span class="ident">machine_types</span> : list</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.max_cpus"><code class="name">var <span class="ident">max_cpus</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_cpus"><code class="name">var <span class="ident">max_cpus</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.max_memory"><code class="name">var <span class="ident">max_memory</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_memory"><code class="name">var <span class="ident">max_memory</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.max_worker"><code class="name">var <span class="ident">max_worker</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_worker"><code class="name">var <span class="ident">max_worker</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.min_cpus"><code class="name">var <span class="ident">min_cpus</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_cpus"><code class="name">var <span class="ident">min_cpus</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.min_memory"><code class="name">var <span class="ident">min_memory</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_memory"><code class="name">var <span class="ident">min_memory</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.min_worker"><code class="name">var <span class="ident">min_worker</span> : int</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_worker"><code class="name">var <span class="ident">min_worker</span> : int</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.namespace"><code class="name">var <span class="ident">namespace</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.namespace"><code class="name">var <span class="ident">namespace</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="codeflare_sdk.cluster.config.ClusterConfiguration.template"><code class="name">var <span class="ident">template</span> : str</code></dt>
+<dt id="debug_codeflare_sdk.cluster.config.ClusterConfiguration.template"><code class="name">var <span class="ident">template</span> : str</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -199,29 +199,29 @@ is passed in as an argument when creating a Cluster object.</p></div>
 <ul id="index">
 <li><h3>Super-module</h3>
 <ul>
-<li><code><a title="codeflare_sdk.cluster" href="index.html">codeflare_sdk.cluster</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster" href="index.html">debug_codeflare_sdk.cluster</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration" href="#codeflare_sdk.cluster.config.ClusterConfiguration">ClusterConfiguration</a></code></h4>
+<h4><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration">ClusterConfiguration</a></code></h4>
 <ul class="two-column">
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.envs" href="#codeflare_sdk.cluster.config.ClusterConfiguration.envs">envs</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.gpu" href="#codeflare_sdk.cluster.config.ClusterConfiguration.gpu">gpu</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.head_info" href="#codeflare_sdk.cluster.config.ClusterConfiguration.head_info">head_info</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.image" href="#codeflare_sdk.cluster.config.ClusterConfiguration.image">image</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.instascale" href="#codeflare_sdk.cluster.config.ClusterConfiguration.instascale">instascale</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.machine_types" href="#codeflare_sdk.cluster.config.ClusterConfiguration.machine_types">machine_types</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.max_cpus" href="#codeflare_sdk.cluster.config.ClusterConfiguration.max_cpus">max_cpus</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.max_memory" href="#codeflare_sdk.cluster.config.ClusterConfiguration.max_memory">max_memory</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.max_worker" href="#codeflare_sdk.cluster.config.ClusterConfiguration.max_worker">max_worker</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.min_cpus" href="#codeflare_sdk.cluster.config.ClusterConfiguration.min_cpus">min_cpus</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.min_memory" href="#codeflare_sdk.cluster.config.ClusterConfiguration.min_memory">min_memory</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.min_worker" href="#codeflare_sdk.cluster.config.ClusterConfiguration.min_worker">min_worker</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.name" href="#codeflare_sdk.cluster.config.ClusterConfiguration.name">name</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.namespace" href="#codeflare_sdk.cluster.config.ClusterConfiguration.namespace">namespace</a></code></li>
-<li><code><a title="codeflare_sdk.cluster.config.ClusterConfiguration.template" href="#codeflare_sdk.cluster.config.ClusterConfiguration.template">template</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.envs" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.envs">envs</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.gpu" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.gpu">gpu</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.head_info" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.head_info">head_info</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.image" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.image">image</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.instascale" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.instascale">instascale</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.machine_types" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.machine_types">machine_types</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_cpus" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_cpus">max_cpus</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_memory" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_memory">max_memory</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_worker" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.max_worker">max_worker</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_cpus" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_cpus">min_cpus</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_memory" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_memory">min_memory</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_worker" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.min_worker">min_worker</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.name" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.name">name</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.namespace" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.namespace">namespace</a></code></li>
+<li><code><a title="debug_codeflare_sdk.cluster.config.ClusterConfiguration.template" href="#debug_codeflare_sdk.cluster.config.ClusterConfiguration.template">template</a></code></li>
 </ul>
 </li>
 </ul>

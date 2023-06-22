@@ -32,8 +32,6 @@ jobs:
         steps:
             - name: Checkout the repository
               uses: actions/checkout@v3
-            - name: Change version in pyproject.toml
-              run: poetry version "${{ github.event.inputs.release-version }}"
             - name: Install Python
               uses: actions/setup-python@v4
               with:
@@ -42,6 +40,8 @@ jobs:
               uses: abatilo/actions-poetry@v2
               with:
                 poetry-version: ${{ github.event.inputs.poetry_version }}
+            - name: Change version in pyproject.toml
+              run: poetry version "${{ github.event.inputs.release-version }}"
             - name: Run poetry install
               run: poetry install --with docs
             - name: Run poetry build

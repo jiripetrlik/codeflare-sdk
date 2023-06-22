@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "codeflare-sdk"
+name = "debug_codeflare_sdk"
 version = "0.0.0-dev"
 description = "Python SDK for codeflare client"
 

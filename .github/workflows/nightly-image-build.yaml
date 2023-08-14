@@ -1,0 +1,21 @@
+name: Nightly Image Build
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "0 0 * * *"
+
+jobs:
+    nightly-build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the repository
+              uses: actions/checkout@v3
+            - name: Install Python
+              uses: actions/setup-python@v4
+              with:
+                python-version: ${{ github.event.inputs.python_version }}
+            - name: Install Poetry
+              uses: abatilo/actions-poetry@v2
+              with:
+                poetry-version: ${{ github.event.inputs.poetry_version }}

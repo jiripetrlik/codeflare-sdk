@@ -60,13 +60,17 @@ jobs:
                 branch: ${{ env.PR_BRANCH_NAME }}
             - name: Create a PR with code changes
               run: |
-                  GIT_BRANCH=${GITHUB_REF#refs/heads/}
-                  gh pr create --base "$GIT_BRANCH" --fill --head "${{ env.PR_BRANCH_NAME }}" --label "lgtm" --label "approved"
+                  if git branch -a | grep "${{ env.PR_BRANCH_NAME }}"; then
+                    GIT_BRANCH=${GITHUB_REF#refs/heads/}
+                    gh pr create --base "$GIT_BRANCH" --fill --head "${{ env.PR_BRANCH_NAME }}" --label "lgtm" --label "approved"
+                  fi
               env:
                 GITHUB_TOKEN: ${{ secrets.CODEFLARE_MACHINE_ACCOUNT_TOKEN }}          
             - name: Wait until PR with code changes is merged
               run: |
-                  timeout 3600 bash -c 'until [[ $(gh pr view '${{ env.PR_BRANCH_NAME }}' --json state --jq .state) == "MERGED" ]]; do sleep 5 && echo "$(gh pr view '${{ env.PR_BRANCH_NAME }}' --json state --jq .state)"; done'
+                  if git branch -a | grep "${{ env.PR_BRANCH_NAME }}"; then
+                    timeout 3600 bash -c 'until [[ $(gh pr view '${{ env.PR_BRANCH_NAME }}' --json state --jq .state) == "MERGED" ]]; do sleep 5 && echo "$(gh pr view '${{ env.PR_BRANCH_NAME }}' --json state --jq .state)"; done'
+                  fi
               env:
                 GITHUB_TOKEN: ${{ github.TOKEN }}
 

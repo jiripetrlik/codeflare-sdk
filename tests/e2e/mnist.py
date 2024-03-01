@@ -136,6 +136,7 @@ class LitMNIST(LightningModule):
         return DataLoader(self.mnist_test, batch_size=BATCH_SIZE)
 
 
+
 # Init DataLoader from MNIST Dataset
 
 model = LitMNIST()
